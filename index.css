@@ -6,21 +6,28 @@
   display: flex;
   position: relative;
   justify-content: center;
+  justify-content: flex-start; /* Align content to the left */
   background-color: var(--dl-color-theme-neutral-light);
+  padding: 0; /* Remove padding */
 }
 .navbar-navbar-interactive {
   width: 100%;
   display: flex;
-  max-width: var(--dl-size-size-maxwidth);
+  max-width: none; /* Remove fixed max-width */
   align-items: center;
+  padding: 0; /* Remove padding */
+  justify-content: space-between;
   padding-top: var(--dl-space-space-twounits);
   padding-left: var(--dl-space-space-threeunits);
   padding-right: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-twounits);
-  justify-content: space-between;
+  background-color: var(--dl-color-theme-neutral-light);
+
 }
 .navbar-image1 {
-  height: 5rem;
+  height: 8rem;
+  margin-left: 0; /* Ensure no margin on the left */
+  padding: 0; /* Ensure no padding around the image */
 }
 .navbar-container2 {
   flex: 0 0 auto;
@@ -80,7 +87,7 @@
   justify-content: space-between;
 }
 .navbar-logo {
-  height: 3rem;
+  height: 15rem;
 }
 .navbar-close-menu {
   display: flex;
@@ -322,6 +329,15 @@
   display: flex;
   position: relative;
 }
+.features1-video {
+  width: 100%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 800px; /* Optional: to limit the maximum size */
+  border-radius: 8px; /* Optional: for rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: for styling */
+}
+
+
 .features1-image1 {
   animation-name: fadeIn;
   animation-delay: 0s;
