@@ -20,7 +20,7 @@
   justify-content: space-between;
 }
 .navbar-image1 {
-  height: 3rem;
+  height: 5rem;
 }
 .navbar-container2 {
   flex: 0 0 auto;
@@ -130,6 +130,8 @@
 
 .hero-wrapper {
   display: contents;
+  margin: 0; /* Ensure no margin */
+  padding: 0; /* Ensure no padding */
 }
 .hero-header78 {
   gap: var(--dl-space-space-threeunits);
@@ -141,6 +143,8 @@
   align-items: center;
   flex-shrink: 0;
   flex-direction: column;
+  padding-bottom: 0; /* Ensure no padding at the bottom */
+  margin-bottom: 0; /* Ensure no margin below */
 }
 .hero-column {
   gap: var(--dl-space-space-oneandhalfunits);
@@ -148,14 +152,17 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-unit);
+  padding-bottom: 0; /* Remove bottom padding */
 }
+
 .hero-content1 {
   gap: var(--dl-space-space-oneandhalfunits);
   display: flex;
   align-self: stretch;
   align-items: center;
   flex-direction: column;
+  margin: 0; /* Ensure no margin */
+  padding: 0; /* Ensure no padding */
 }
 .hero-text1 {
   text-align: center;
@@ -167,10 +174,10 @@
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: flex-start;
-  padding-top: var(--dl-space-space-unit);
+  padding-top: 0
 }
 .hero-content2 {
-  gap: var(--dl-space-space-oneandhalfunits);
+  
   width: 100%;
   display: flex;
   position: relative;
